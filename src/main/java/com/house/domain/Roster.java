@@ -1,5 +1,6 @@
 package com.house.domain;
 
+import java.sql.Time;
 import java.sql.Timestamp;
 
 public class Roster {
@@ -9,6 +10,83 @@ public class Roster {
     private double measure;//面积
     private String layout;//户型
     private String name;//住户姓名
+    private String idc;//身份证号
+    private String phnumber;//联系电话
+    private Timestamp intime;//入住时间
+    private String gno;//保障号
+    private int prent;//公租
+    private int lrent;//廉租
+
+    @Override
+    public String toString() {
+        return "Roster{" +
+                "no=" + no +
+                ", zname='" + zname + '\'' +
+                ", roomno='" + roomno + '\'' +
+                ", measure=" + measure +
+                ", layout='" + layout + '\'' +
+                ", name='" + name + '\'' +
+                ", idc='" + idc + '\'' +
+                ", phnumber='" + phnumber + '\'' +
+                ", intime=" + intime +
+                ", gno='" + gno + '\'' +
+                ", prent=" + prent +
+                ", lrent=" + lrent +
+                ", sum=" + sum +
+                ", avemeasure=" + avemeasure +
+                ", rent=" + rent +
+                ", pfee=" + pfee +
+                ", zytftime=" + zytftime +
+                ", wgreason='" + wgreason + '\'' +
+                ", fwtime=" + fwtime +
+                ", yqtime=" + yqtime +
+                ", tktime=" + tktime +
+                ", bztype='" + bztype + '\'' +
+                ", family='" + family + '\'' +
+                ", zhtype='" + zhtype + '\'' +
+                ", ifback='" + ifback + '\'' +
+                ", remark='" + remark + '\'' +
+                ", ifqt='" + ifqt + '\'' +
+                ", yxtime=" + yxtime +
+                '}';
+    }
+
+    private int sum;//合计
+
+    public Roster(int no, String zname, String roomno, double measure, String layout, String name, String idc, String phnumber, Timestamp intime, String gno, int prent, int lrent, int sum, double avemeasure, double rent, double pfee, Timestamp zytftime, String wgreason, Timestamp fwtime, Timestamp yqtime, Timestamp tktime, String bztype, String family, String zhtype, String ifback, String remark, String ifqt, Timestamp yxtime) {
+        this.no = no;
+        this.zname = zname;
+        this.roomno = roomno;
+        this.measure = measure;
+        this.layout = layout;
+        this.name = name;
+        this.idc = idc;
+        this.phnumber = phnumber;
+        this.intime = intime;
+        this.gno = gno;
+        this.prent = prent;
+        this.lrent = lrent;
+        this.sum = sum;
+        this.avemeasure = avemeasure;
+        this.rent = rent;
+        this.pfee = pfee;
+        this.zytftime = zytftime;
+        this.wgreason = wgreason;
+        this.fwtime = fwtime;
+        this.yqtime = yqtime;
+        this.tktime = tktime;
+        this.bztype = bztype;
+        this.family = family;
+        this.zhtype = zhtype;
+        this.ifback = ifback;
+        this.remark = remark;
+        this.ifqt = ifqt;
+        this.yxtime = yxtime;
+    }
+
+    private double avemeasure;//人均保障面积
+    private double rent;//房租
+    private double pfee;//物业费
 
     public int getNo() {
         return no;
@@ -226,94 +304,18 @@ public class Roster {
         this.ifqt = ifqt;
     }
 
-    public String getYxtime() {
+    public Timestamp getYxtime() {
         return yxtime;
     }
 
-    public void setYxtime(String yxtime) {
+    public void setYxtime(Timestamp yxtime) {
         this.yxtime = yxtime;
     }
 
-    private String idc;//身份证号
-    private String phnumber;//联系电话
-    private Timestamp intime;//入住时间
-    private String gno;//保障号
-    private int prent;//公租
-    private int lrent;//廉租
-    private int sum;//合计
-    private double avemeasure;//人均保障面积
-    private double rent;//房租
-    private double pfee;//物业费
     private Timestamp zytftime;//自愿退房时间
     private String wgreason;//违规事由
     private Timestamp fwtime;//发文时间
     private Timestamp yqtime;//延期时间
-
-    @Override
-    public String toString() {
-        return "roster{" +
-                "no=" + no +
-                ", zname='" + zname + '\'' +
-                ", roomno='" + roomno + '\'' +
-                ", measure=" + measure +
-                ", layout='" + layout + '\'' +
-                ", name='" + name + '\'' +
-                ", idc='" + idc + '\'' +
-                ", phnumber='" + phnumber + '\'' +
-                ", intime=" + intime +
-                ", gno='" + gno + '\'' +
-                ", prent=" + prent +
-                ", lrent=" + lrent +
-                ", sum=" + sum +
-                ", avemeasure=" + avemeasure +
-                ", rent=" + rent +
-                ", pfee=" + pfee +
-                ", zytftime=" + zytftime +
-                ", wgreason='" + wgreason + '\'' +
-                ", fwtime=" + fwtime +
-                ", yqtime=" + yqtime +
-                ", tktime=" + tktime +
-                ", bztype='" + bztype + '\'' +
-                ", family='" + family + '\'' +
-                ", zhtype='" + zhtype + '\'' +
-                ", ifback='" + ifback + '\'' +
-                ", remark='" + remark + '\'' +
-                ", ifqt='" + ifqt + '\'' +
-                ", yxtime='" + yxtime + '\'' +
-                '}';
-    }
-
-    public Roster(int no, String zname, String roomno, double measure, String layout, String name, String idc, String phnumber, Timestamp intime, String gno, int prent, int lrent, int sum, double avemeasure, double rent, double pfee, Timestamp zytftime, String wgreason, Timestamp fwtime, Timestamp yqtime, Timestamp tktime, String bztype, String family, String zhtype, String ifback, String remark, String ifqt, String yxtime) {
-        this.no = no;
-        this.zname = zname;
-        this.roomno = roomno;
-        this.measure = measure;
-        this.layout = layout;
-        this.name = name;
-        this.idc = idc;
-        this.phnumber = phnumber;
-        this.intime = intime;
-        this.gno = gno;
-        this.prent = prent;
-        this.lrent = lrent;
-        this.sum = sum;
-        this.avemeasure = avemeasure;
-        this.rent = rent;
-        this.pfee = pfee;
-        this.zytftime = zytftime;
-        this.wgreason = wgreason;
-        this.fwtime = fwtime;
-        this.yqtime = yqtime;
-        this.tktime = tktime;
-        this.bztype = bztype;
-        this.family = family;
-        this.zhtype = zhtype;
-        this.ifback = ifback;
-        this.remark = remark;
-        this.ifqt = ifqt;
-        this.yxtime = yxtime;
-    }
-
     private Timestamp tktime;//腾空房屋时间
     private String bztype;//保障类型
     private String family;//家庭成员
@@ -321,5 +323,5 @@ public class Roster {
     private String ifback;//是否已退
     private String remark;//备注
     private String ifqt;//是否清退
-    private String yxtime;//资格有效期
+    private Timestamp yxtime;//资格有效期
 }

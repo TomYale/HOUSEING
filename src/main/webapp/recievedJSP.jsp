@@ -1,5 +1,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.house.domain.Tfrecord" %>
+<%@ page import="com.house.domain.Recieved" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
     String path = request.getContextPath();
@@ -8,7 +9,7 @@
             + path + "/";
 %>
 <%
-    List<Tfrecord> tfrecordList = (List<Tfrecord>)request.getAttribute("list");
+    List<Recieved> tfrecordList = (List<Recieved>)request.getAttribute("list");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -118,8 +119,8 @@
                     <div class="ms-panel-header ms-panel-custom ">
 
                         <div class="ms-heading">
-                            <h6>操作记录</h6>
-                            <p>所有在线管理人员操作记录</p>
+                            <h6>来文记录</h6>
+                            <p>来文相关数据统计</p>
                         </div>
                     </div>
                     <div class="ms-panel-body">
@@ -128,60 +129,38 @@
                                 <thead>
                                 <tr>
                                     <th>序号</th>
-                                    <th>房号</th>
-                                    <th>面积</th>
-                                    <th>户型</th>
-                                    <th>申请人</th>
-                                    <th>身份证</th>
-                                    <th>保障号</th>
-                                    <th>退房原因</th>
-                                    <th>资格</th>
-                                    <th>公廉</th>
-                                    <th>退房时间</th>
+                                    <th>来文</th>
+                                    <th>来文时间</th>
+                                    <th>来文单位</th>
+                                    <th>申请户编号</th>
+                                    <th>申请户身份证号</th>
+                                    <th>已配租房号</th>
+                                    <th>发文及来文内容</th>
                                     <th>联系电话</th>
-                                    <th>交表时间</th>
-                                    <th>户名</th>
-                                    <th>开户银行</th>
-                                    <th>账号</th>
-                                    <th>押金单</th>
-                                    <th>水电押金</th>
-                                    <th>应退水费</th>
-                                    <th>应退电费</th>
-                                    <th>房屋押金</th>
-                                    <th>其他</th>
-                                    <th>合计</th>
-                                    <th>押金状态</th>
+                                    <th>保障股意见</th>
+                                    <th>分配股意见</th>
+                                    <th>领导批示</th>
+                                    <th>处理结果</th>
                                     <th>备注</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <%	for(Tfrecord d:tfrecordList){
+                                <%	for(Recieved d:tfrecordList){
                                 %>
                                 <tr>
                                     <td><%=d.getNo()%></td>
-                                    <td><%=d.getHno()%></td>
-                                    <td><%=d.getMeasure()%></td>
-                                    <td><%=d.getLayout()%></td>
-                                    <td><%=d.getApplicant()%></td>
+                                    <td><%=d.getWno()%></td>
+                                    <td><%=d.getRetime()%></td>
+                                    <td><%=d.getCompany()%></td>
+                                    <td><%=d.getSqhid()%></td>
                                     <td><%=d.getIdc()%></td>
-                                    <td><%=d.getGno()%></td>
-                                    <td><%=d.getReason()%></td>
-                                    <td><%=d.getQual()%></td>
-                                    <td><%=d.getType()%></td>
-                                    <td><%=d.getTftime()%></td>
-                                    <td><%=d.getPnumber()%></td>
-                                    <td><%=d.getJbtime()%></td>
-                                    <td><%=d.getHname()%></td>
-                                    <td><%=d.getBank()%></td>
-                                    <td><%=d.getBankno()%></td>
-                                    <td><%=d.getYj()%></td>
-                                    <td><%=d.getSddeposit()%></td>
-                                    <td><%=d.getYtsf()%></td>
-                                    <td><%=d.getYtdf()%></td>
-                                    <td><%=d.getFwdeposit()%></td>
-                                    <td><%=d.getOther()%></td>
-                                    <td><%=d.getSum()%></td>
-                                    <td><%=d.getYjstate()%></td>
+                                    <td><%=d.getZfno()%></td>
+                                    <td><%=d.getWords()%></td>
+                                    <td><%=d.getPhnumber()%></td>
+                                    <td><%=d.getBzunit()%></td>
+                                    <td><%=d.getFpunit()%></td>
+                                    <td><%=d.getLeaderps()%></td>
+                                    <td><%=d.getResult()%></td>
                                     <td><%=d.getRemark()%></td>
                                 </tr>
                                 <%

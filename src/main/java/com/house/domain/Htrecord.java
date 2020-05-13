@@ -4,9 +4,57 @@ import java.sql.Timestamp;
 
 public class Htrecord {
     private int no;//序号
+    private String roomno;//房号
+    private String name;//住户姓名
+    private String idc;//身份证
+    private String dno;//档案编号
+    private Timestamp buytime;//购房时间
+    private String place;//购房地点及房号
+    private double measure;//房产面积
+    private Timestamp jftime;//购房交房日
+    private Timestamp tktime;//可延期腾空房时间
+    private String pnumber;//联系电话
+    private String ifqt;//是否已发清退通知
 
     public int getNo() {
         return no;
+    }
+
+    @Override
+    public String toString() {
+        return "Htrecord{" +
+                "no=" + no +
+                ", roomno='" + roomno + '\'' +
+                ", name='" + name + '\'' +
+                ", idc='" + idc + '\'' +
+                ", dno='" + dno + '\'' +
+                ", buytime=" + buytime +
+                ", place='" + place + '\'' +
+                ", measure=" + measure +
+                ", jftime=" + jftime +
+                ", tktime=" + tktime +
+                ", pnumber='" + pnumber + '\'' +
+                ", ifqt='" + ifqt + '\'' +
+                ", tjtime=" + tjtime +
+                ", remark='" + remark + '\'' +
+                '}';
+    }
+
+    public Htrecord(int no, String roomno, String name, String idc, String dno, Timestamp buytime, String place, double measure, Timestamp jftime, Timestamp tktime, String pnumber, String ifqt, Timestamp tjtime, String remark) {
+        this.no = no;
+        this.roomno = roomno;
+        this.name = name;
+        this.idc = idc;
+        this.dno = dno;
+        this.buytime = buytime;
+        this.place = place;
+        this.measure = measure;
+        this.jftime = jftime;
+        this.tktime = tktime;
+        this.pnumber = pnumber;
+        this.ifqt = ifqt;
+        this.tjtime = tjtime;
+        this.remark = remark;
     }
 
     public void setNo(int no) {
@@ -45,6 +93,14 @@ public class Htrecord {
         this.dno = dno;
     }
 
+    public Timestamp getBuytime() {
+        return buytime;
+    }
+
+    public void setBuytime(Timestamp buytime) {
+        this.buytime = buytime;
+    }
+
     public String getPlace() {
         return place;
     }
@@ -61,12 +117,12 @@ public class Htrecord {
         this.measure = measure;
     }
 
-    public Timestamp getIftime() {
-        return iftime;
+    public Timestamp getJftime() {
+        return jftime;
     }
 
-    public void setIftime(Timestamp iftime) {
-        this.iftime = iftime;
+    public void setJftime(Timestamp jftime) {
+        this.jftime = jftime;
     }
 
     public Timestamp getTktime() {
@@ -109,51 +165,7 @@ public class Htrecord {
         this.remark = remark;
     }
 
-    public Htrecord(int no, String roomno, String name, String idc, String dno, String place, double measure, Timestamp iftime, Timestamp tktime, String pnumber, String ifqt, Timestamp tjtime, String remark) {
-        this.no = no;
-        this.roomno = roomno;
-        this.name = name;
-        this.idc = idc;
-        this.dno = dno;
-        this.place = place;
-        this.measure = measure;
-        this.iftime = iftime;
-        this.tktime = tktime;
-        this.pnumber = pnumber;
-        this.ifqt = ifqt;
-        this.tjtime = tjtime;
-        this.remark = remark;
-    }
-
-    @Override
-    public String toString() {
-        return "Htrecord{" +
-                "no=" + no +
-                ", roomno='" + roomno + '\'' +
-                ", name='" + name + '\'' +
-                ", idc='" + idc + '\'' +
-                ", dno='" + dno + '\'' +
-                ", place='" + place + '\'' +
-                ", measure=" + measure +
-                ", iftime=" + iftime +
-                ", tktime=" + tktime +
-                ", pnumber='" + pnumber + '\'' +
-                ", ifqt='" + ifqt + '\'' +
-                ", tjtime=" + tjtime +
-                ", remark='" + remark + '\'' +
-                '}';
-    }
-
-    private String roomno;//房号
-    private String name;//住户姓名
-    private String idc;//身份证
-    private String dno;//档案编号
-    private String place;//购房地点及房号
-    private double measure;//房产面积
-    private Timestamp iftime;//购房交房日
-    private Timestamp tktime;//可延期腾空房时间
-    private String pnumber;//联系电话
-    private String ifqt;//是否已发清退通知
     private Timestamp tjtime;//提交合同时间
     private String remark;//备注
+
 }

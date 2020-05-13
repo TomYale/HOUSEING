@@ -118,8 +118,8 @@
                     <div class="ms-panel-header ms-panel-custom ">
 
                         <div class="ms-heading">
-                            <h6>操作记录</h6>
-                            <p>所有在线管理人员操作记录</p>
+                            <h6>退房记录</h6>
+                            <p>所有住户退房操作记录</p>
                         </div>
                     </div>
                     <div class="ms-panel-body">
