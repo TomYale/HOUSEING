@@ -86,7 +86,7 @@
             </div>
             <div class="ms-auth-col">
                 <div class="ms-auth-form">
-                    <form class="needs-validation" novalidate="" action="messagejsp" method="post">
+                    <form class="needs-validation" novalidate="" action="message" method="post">
                         <h1>钦州住房保障</h1>
                         <p>请输入你的邮箱和账号密码</p>
                         <div class="mb-3">

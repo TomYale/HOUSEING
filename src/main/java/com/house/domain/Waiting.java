@@ -1,6 +1,6 @@
 package com.house.domain;
 
-public class waiting {
+public class Waiting {
     private int id;//ID
     private String no2;//编号
     private String applicant;//申请人
@@ -46,7 +46,7 @@ public class waiting {
         return id;
     }
 
-    public waiting(int id, String no2, String applicant, String idc, String lrtime, String rktime, String validity, String intention, String waitingfx, String rownumber, String first, String reason, String wtype, String fprecord, String ifright, int no, int wnum) {
+    public Waiting(int id, String no2, String applicant, String idc, String lrtime, String rktime, String validity, String intention, String waitingfx, String rownumber, String first, String reason, String wtype, String fprecord, String ifright, int no, int wnum) {
         this.id = id;
         this.no2 = no2;
         this.applicant = applicant;

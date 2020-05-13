@@ -14,29 +14,12 @@ public class Qtrecord {
     private String reason;//腾退原因
     private String sdhz;//送达回证
     private String iftk;//是否腾空
-    private String jftime;//购房交房日
 
-    @Override
-    public String toString() {
-        return "Qtrecord{" +
-                "no=" + no +
-                ", applicant='" + applicant + '\'' +
-                ", idc='" + idc + '\'' +
-                ", rid='" + rid + '\'' +
-                ", type='" + type + '\'' +
-                ", hno='" + hno + '\'' +
-                ", fwtime=" + fwtime +
-                ", qxtime=" + qxtime +
-                ", reason='" + reason + '\'' +
-                ", sdhz='" + sdhz + '\'' +
-                ", iftk='" + iftk + '\'' +
-                ", jftime='" + jftime + '\'' +
-                ", remark='" + remark + '\'' +
-                ", notice='" + notice + '\'' +
-                '}';
+    public int getNo() {
+        return no;
     }
 
-    public Qtrecord(int no, String applicant, String idc, String rid, String type, String hno, Timestamp fwtime, Timestamp qxtime, String reason, String sdhz, String iftk, String jftime, String remark, String notice) {
+    public Qtrecord(int no, String applicant, String idc, String rid, String type, String hno, Timestamp fwtime, Timestamp qxtime, String reason, String sdhz, String iftk, Timestamp jftime, String remark, String notice) {
         this.no = no;
         this.applicant = applicant;
         this.idc = idc;
@@ -53,10 +36,24 @@ public class Qtrecord {
         this.notice = notice;
     }
 
-    private String remark;//备注
-
-    public int getNo() {
-        return no;
+    @Override
+    public String toString() {
+        return "Qtrecord{" +
+                "no=" + no +
+                ", applicant='" + applicant + '\'' +
+                ", idc='" + idc + '\'' +
+                ", rid='" + rid + '\'' +
+                ", type='" + type + '\'' +
+                ", hno='" + hno + '\'' +
+                ", fwtime=" + fwtime +
+                ", qxtime=" + qxtime +
+                ", reason='" + reason + '\'' +
+                ", sdhz='" + sdhz + '\'' +
+                ", iftk='" + iftk + '\'' +
+                ", jftime=" + jftime +
+                ", remark='" + remark + '\'' +
+                ", notice='" + notice + '\'' +
+                '}';
     }
 
     public void setNo(int no) {
@@ -143,11 +140,11 @@ public class Qtrecord {
         this.iftk = iftk;
     }
 
-    public String getJftime() {
+    public Timestamp getJftime() {
         return jftime;
     }
 
-    public void setJftime(String jftime) {
+    public void setJftime(Timestamp jftime) {
         this.jftime = jftime;
     }
 
@@ -167,5 +164,7 @@ public class Qtrecord {
         this.notice = notice;
     }
 
+    private Timestamp jftime;//购房交房日
+    private String remark;//备注
     private String notice;//催款通知
 }

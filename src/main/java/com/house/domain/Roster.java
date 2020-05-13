@@ -2,7 +2,7 @@ package com.house.domain;
 
 import java.sql.Timestamp;
 
-public class roster {
+public class Roster {
     private int no;//序号
     private String zname;//小区名称
     private String roomno;//房号
@@ -283,7 +283,7 @@ public class roster {
                 '}';
     }
 
-    public roster(int no, String zname, String roomno, double measure, String layout, String name, String idc, String phnumber, Timestamp intime, String gno, int prent, int lrent, int sum, double avemeasure, double rent, double pfee, Timestamp zytftime, String wgreason, Timestamp fwtime, Timestamp yqtime, Timestamp tktime, String bztype, String family, String zhtype, String ifback, String remark, String ifqt, String yxtime) {
+    public Roster(int no, String zname, String roomno, double measure, String layout, String name, String idc, String phnumber, Timestamp intime, String gno, int prent, int lrent, int sum, double avemeasure, double rent, double pfee, Timestamp zytftime, String wgreason, Timestamp fwtime, Timestamp yqtime, Timestamp tktime, String bztype, String family, String zhtype, String ifback, String remark, String ifqt, String yxtime) {
         this.no = no;
         this.zname = zname;
         this.roomno = roomno;

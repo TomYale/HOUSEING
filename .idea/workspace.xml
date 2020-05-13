@@ -6,7 +6,55 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c331c58a-8b85-4655-a153-83a576e8b67f" name="Default Changelist" comment="" />
+    <list default="true" id="c331c58a-8b85-4655-a153-83a576e8b67f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/HtrecordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/LotteryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/QtrecordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/RecievedDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/RosterDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/WaitingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/WxrecordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/htrecordJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lotteryJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/qtrecordJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/recievedJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/rosterJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/userJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/waitingJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/wxrecordJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/dao/TfrecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/TfrecordDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/domain/recieved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/domain/Recieved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/domain/roster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/domain/Roster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/domain/waiting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/domain/Waiting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/service/Impl/TfrecordServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/service/Impl/FindallServicelmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/service/TfrecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/service/FindallService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aside.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aside.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/controller/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/dao/TfrecordDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/dao/TfrecordDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/recieved.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/recieved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/roster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/roster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/waiting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/waiting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/service/Impl/TfrecordServicelmpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/service/TfrecordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/shiro.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/messageJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/messageJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/tfrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/tfrecordJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/controller/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/dao/TfrecordDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/dao/TfrecordDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/domain/recieved.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/domain/recieved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/domain/roster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/domain/roster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/domain/waiting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/domain/waiting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/service/Impl/TfrecordServicelmpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/service/TfrecordService.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +66,13 @@
       <list>
         <option value="jsf" />
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -38,10 +89,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1WdpzPrhuCBZ1gigXFIbSsvdtWg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -51,19 +103,20 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.gx.service.Impl" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\编程学习\Eclipse_javaee\HOUSE\src\main\webapp" />
-      <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\webapp\WEB-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gx.dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\编程学习\Eclipse_javaee\HOUSE\src\main\webapp" />
       <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\webapp" />
       <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\resources" />
       <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\webapp\statis" />
       <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\webapp\js" />
-      <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\webapp\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gx.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\编程学习\Eclipse_javaee\HOUSE\src\main\webapp" />
+      <recent name="F:\编程学习\Eclipse_javaee\HOUSE\src\main\webapp\WEB-INF" />
+      <recent name="F:\编程学习\Eclipse_javaee\Twossm\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -581,11 +634,25 @@
       <workItem from="1589167657164" duration="61000" />
       <workItem from="1589168094207" duration="12832000" />
       <workItem from="1589200793060" duration="5212000" />
-      <workItem from="1589267311988" duration="4746000" />
+      <workItem from="1589267311988" duration="9773000" />
+      <workItem from="1589337451039" duration="14903000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -2,7 +2,7 @@ package com.house.domain;
 
 import java.sql.Timestamp;
 
-public class recieved {
+public class Recieved {
     private int no;//序号
     private String wno;//文号
     private Timestamp retime;//来文时间
@@ -30,7 +30,7 @@ public class recieved {
                 '}';
     }
 
-    public recieved(int no, String wno, Timestamp retime, String company, String sqhid, String idc, String zfno, String words, String phnumber, String bzunit, String fpunit, String leaderps, String result, String remark) {
+    public Recieved(int no, String wno, Timestamp retime, String company, String sqhid, String idc, String zfno, String words, String phnumber, String bzunit, String fpunit, String leaderps, String result, String remark) {
         this.no = no;
         this.wno = wno;
         this.retime = retime;

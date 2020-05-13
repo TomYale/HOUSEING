@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public interface TfrecordDao {
-    @Select("select * from tf_record")//查询所有视频
+    @Select("select * from tf_record ORDER BY NO DESC")//查询所有视频
     public List<Tfrecord> findAll();
-
 }
