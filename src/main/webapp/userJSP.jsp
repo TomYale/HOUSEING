@@ -123,33 +123,55 @@
                                 <%	for(User d:tfrecordList){
                                 %>
                                 <tr>
-                                    <td> <i class="fa fa-edit" data-toggle="modal" data-target="#myModal" οnclick="update(this)"></i><i class="fa fa-trash"></i>
+                                    <td> <i class="fa fa-edit" data-toggle="modal" data-target="#myModal<%=d.getNo()%>"></i><i class="fa fa-trash"></i>
                                     </td>
                                     <td><%=d.getNo()%></td>
                                     <td><%=d.getUsername()%></td>
-                                    <td><%=d.getPassword()%></td>
+                                    <td>*****</td>
                                     <td><%=d.getName()%></td>
                                     <td><%=d.getJury()%></td>
 
                                     <!-- 模态框 -->
-                                    <div class="modal fade" id="myModal">
+                                    <div class="modal fade" id="myModal<%=d.getNo()%>">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
 
                                                 <!-- 模态框头部 -->
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title">模态框头部</h4>
+                                                    <h4 class="modal-title">修改数据</h4>
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 </div>
 
                                                 <!-- 模态框主体 -->
                                                 <div class="modal-body">
-                                                    <%=d.getUsername()%>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="username">用户名（邮箱）</label>
+                                                            <input type="email" class="form-control" id="username" placeholder="name@example.com" value="<%=d.getUsername()%>">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="password">密码</label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Password" value="<%=d.getPassword()%>">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="name">姓名</label>
+                                                            <input type="text" class="form-control" id="name" placeholder="Password" value="<%=d.getName()%>">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="juri">权限</label>
+                                                            <select class="form-control" id="juri" value="<%=d.getJury()%>">
+                                                                <option value="manager">manager</option>
+                                                                <option value="typist">typist</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </form>
                                                 </div>
 
                                                 <!-- 模态框底部 -->
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                                    <button type="button" class="btn btn-square btn-success">修改数据</button>
+                                                    <button type="button" class="btn btn-square btn-light" data-dismiss="modal">关闭</button>
                                                 </div>
 
                                             </div>
