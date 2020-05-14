@@ -73,6 +73,12 @@ public class FindallServicelmpl implements FindallService {
     }
 
     @Override
+    public List<Roster> findhtdq() {
+        List<Roster> list=rosterDao.findAll();
+        return list;
+    }
+
+    @Override
     public List<User> finduser() {
         List<User> list= userDao.findAll();
         return list;

@@ -119,8 +119,8 @@
                     <div class="ms-panel-header ms-panel-custom ">
 
                         <div class="ms-heading">
-                            <h6>操作记录</h6>
-                            <p>所有在线管理人员操作记录</p>
+                            <h6>购房合同查询</h6>
+                            <p>查询操作所有购房合同记录</p>
                         </div>
                     </div>
                     <div class="ms-panel-body">

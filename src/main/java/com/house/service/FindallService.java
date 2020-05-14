@@ -14,4 +14,5 @@ public interface FindallService {
     public List<Waiting> findwait();
     public List<Wxrecord> findwxr();
     public List<Lottery> findlot();
+    public List<Roster> findhtdq();
 }

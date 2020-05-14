@@ -1,69 +1,20 @@
 package com.house.domain;
 
+import java.sql.Time;
+import java.sql.Timestamp;
+
 public class Waiting {
     private int id;//ID
     private String no2;//编号
     private String applicant;//申请人
     private String idc;//身份证
-    private String lrtime;//录入时间
-    private String rktime;//入库时间
-    private String validity;//有效期
+    private Timestamp lrtime;//录入时间
+    private Timestamp rktime;//入库时间
+    private Timestamp validity;//有效期
     private String intention;//意向小区
-
-    @Override
-    public String toString() {
-        return "waiting{" +
-                "id=" + id +
-                ", no2='" + no2 + '\'' +
-                ", applicant='" + applicant + '\'' +
-                ", idc='" + idc + '\'' +
-                ", lrtime='" + lrtime + '\'' +
-                ", rktime='" + rktime + '\'' +
-                ", validity='" + validity + '\'' +
-                ", intention='" + intention + '\'' +
-                ", waitingfx='" + waitingfx + '\'' +
-                ", rownumber='" + rownumber + '\'' +
-                ", first='" + first + '\'' +
-                ", reason='" + reason + '\'' +
-                ", wtype='" + wtype + '\'' +
-                ", fprecord='" + fprecord + '\'' +
-                ", ifright='" + ifright + '\'' +
-                ", no=" + no +
-                ", wnum=" + wnum +
-                '}';
-    }
-
-    private String waitingfx;//轮候房型
-    private String rownumber;//轮候排号
-    private String first;//是否优先
-    private String reason;//原因
-    private String wtype;//轮候类型
-    private String fprecord;//分配记录
-    private String ifright;//是否符合摇号
-    private int no;//序号
 
     public int getId() {
         return id;
-    }
-
-    public Waiting(int id, String no2, String applicant, String idc, String lrtime, String rktime, String validity, String intention, String waitingfx, String rownumber, String first, String reason, String wtype, String fprecord, String ifright, int no, int wnum) {
-        this.id = id;
-        this.no2 = no2;
-        this.applicant = applicant;
-        this.idc = idc;
-        this.lrtime = lrtime;
-        this.rktime = rktime;
-        this.validity = validity;
-        this.intention = intention;
-        this.waitingfx = waitingfx;
-        this.rownumber = rownumber;
-        this.first = first;
-        this.reason = reason;
-        this.wtype = wtype;
-        this.fprecord = fprecord;
-        this.ifright = ifright;
-        this.no = no;
-        this.wnum = wnum;
     }
 
     public void setId(int id) {
@@ -94,27 +45,27 @@ public class Waiting {
         this.idc = idc;
     }
 
-    public String getLrtime() {
+    public Timestamp getLrtime() {
         return lrtime;
     }
 
-    public void setLrtime(String lrtime) {
+    public void setLrtime(Timestamp lrtime) {
         this.lrtime = lrtime;
     }
 
-    public String getRktime() {
+    public Timestamp getRktime() {
         return rktime;
     }
 
-    public void setRktime(String rktime) {
+    public void setRktime(Timestamp rktime) {
         this.rktime = rktime;
     }
 
-    public String getValidity() {
+    public Timestamp getValidity() {
         return validity;
     }
 
-    public void setValidity(String validity) {
+    public void setValidity(Timestamp validity) {
         this.validity = validity;
     }
 
@@ -182,8 +133,51 @@ public class Waiting {
         this.ifright = ifright;
     }
 
+    @Override
+    public String toString() {
+        return "Waiting{" +
+                "id=" + id +
+                ", no2='" + no2 + '\'' +
+                ", applicant='" + applicant + '\'' +
+                ", idc='" + idc + '\'' +
+                ", lrtime=" + lrtime +
+                ", rktime=" + rktime +
+                ", validity=" + validity +
+                ", intention='" + intention + '\'' +
+                ", waitingfx='" + waitingfx + '\'' +
+                ", rownumber='" + rownumber + '\'' +
+                ", first='" + first + '\'' +
+                ", reason='" + reason + '\'' +
+                ", wtype='" + wtype + '\'' +
+                ", fprecord='" + fprecord + '\'' +
+                ", ifright='" + ifright + '\'' +
+                ", no=" + no +
+                ", wnum=" + wnum +
+                '}';
+    }
+
     public int getNo() {
         return no;
+    }
+
+    public Waiting(int id, String no2, String applicant, String idc, Timestamp lrtime, Timestamp rktime, Timestamp validity, String intention, String waitingfx, String rownumber, String first, String reason, String wtype, String fprecord, String ifright, int no, int wnum) {
+        this.id = id;
+        this.no2 = no2;
+        this.applicant = applicant;
+        this.idc = idc;
+        this.lrtime = lrtime;
+        this.rktime = rktime;
+        this.validity = validity;
+        this.intention = intention;
+        this.waitingfx = waitingfx;
+        this.rownumber = rownumber;
+        this.first = first;
+        this.reason = reason;
+        this.wtype = wtype;
+        this.fprecord = fprecord;
+        this.ifright = ifright;
+        this.no = no;
+        this.wnum = wnum;
     }
 
     public void setNo(int no) {
@@ -197,6 +191,17 @@ public class Waiting {
     public void setWnum(int wnum) {
         this.wnum = wnum;
     }
+
+    private String waitingfx;//轮候房型
+    private String rownumber;//轮候排号
+    private String first;//是否优先
+    private String reason;//原因
+    private String wtype;//轮候类型
+    private String fprecord;//分配记录
+    private String ifright;//是否符合摇号
+    private int no;//序号
+
+
 
     private int wnum;//等待次数
 }

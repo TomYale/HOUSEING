@@ -33,7 +33,7 @@
                 <li> <a href="messsage/htrecord">购房合同记录</a> </li>
                 <li> <a href="messsage/waiting">轮候查询</a> </li>
                 <li> <a href="messsage/wxrecord">维修记录</a> </li>
-                <li> <a href="index.jsp">合同待签列表</a> </li>
+                <li> <a href="messsage/htdqlist">合同待签列表</a> </li>
             </ul>
         </li>
 

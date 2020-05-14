@@ -1,6 +1,5 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.house.domain.Tfrecord" %>
-<%@ page import="com.house.domain.User" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
     String path = request.getContextPath();
@@ -9,7 +8,7 @@
             + path + "/";
 %>
 <%
-    List<User> tfrecordList = (List<User>)request.getAttribute("list");
+    List<Tfrecord> tfrecordList = (List<Tfrecord>)request.getAttribute("list");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,8 +118,8 @@
                     <div class="ms-panel-header ms-panel-custom ">
 
                         <div class="ms-heading">
-                            <h6>用户信息</h6>
-                            <p>由管理员管理所有用户信息</p>
+                            <h6>操作记录</h6>
+                            <p>所有在线管理人员操作记录</p>
                         </div>
                     </div>
                     <div class="ms-panel-body">
@@ -129,22 +128,61 @@
                                 <thead>
                                 <tr>
                                     <th>序号</th>
-                                    <th>用户名（邮箱）</th>
-                                    <th>密码</th>
-                                    <th>姓名</th>
-                                    <th>权限组</th>
-
+                                    <th>房号</th>
+                                    <th>面积</th>
+                                    <th>户型</th>
+                                    <th>申请人</th>
+                                    <th>身份证</th>
+                                    <th>保障号</th>
+                                    <th>退房原因</th>
+                                    <th>资格</th>
+                                    <th>公廉</th>
+                                    <th>退房时间</th>
+                                    <th>联系电话</th>
+                                    <th>交表时间</th>
+                                    <th>户名</th>
+                                    <th>开户银行</th>
+                                    <th>账号</th>
+                                    <th>押金单</th>
+                                    <th>水电押金</th>
+                                    <th>应退水费</th>
+                                    <th>应退电费</th>
+                                    <th>房屋押金</th>
+                                    <th>其他</th>
+                                    <th>合计</th>
+                                    <th>押金状态</th>
+                                    <th>备注</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <%	for(User d:tfrecordList){
+                                <%	for(Tfrecord d:tfrecordList){
                                 %>
                                 <tr>
                                     <td><%=d.getNo()%></td>
-                                    <td><%=d.getUsername()%></td>
-                                    <td><%=d.getPassword()%></td>
-                                    <td><%=d.getName()%></td>
-                                    <td><%=d.getJury()%></td>
+                                    <td><%=d.getHno()%></td>
+                                    <td><%=d.getMeasure()%></td>
+                                    <td><%=d.getLayout()%></td>
+                                    <td><%=d.getApplicant()%></td>
+                                    <td><%=d.getIdc()%></td>
+                                    <td><%=d.getGno()%></td>
+                                    <td><%=d.getReason()%></td>
+                                    <td><%=d.getQual()%></td>
+                                    <td><%=d.getType()%></td>
+                                    <td><%=d.getTftime()%></td>
+                                    <td><%=d.getPnumber()%></td>
+                                    <td><%=d.getJbtime()%></td>
+                                    <td><%=d.getHname()%></td>
+                                    <td><%=d.getBank()%></td>
+                                    <td><%=d.getBankno()%></td>
+                                    <td><%=d.getYj()%></td>
+                                    <td><%=d.getSddeposit()%></td>
+                                    <td><%=d.getYtsf()%></td>
+                                    <td><%=d.getYtdf()%></td>
+                                    <td><%=d.getFwdeposit()%></td>
+                                    <td><%=d.getOther()%></td>
+                                    <td><%=d.getSum()%></td>
+                                    <td><%=d.getYjstate()%></td>
+                                    <td><%=d.getRemark()%></td>
                                 </tr>
                                 <%
                                     }

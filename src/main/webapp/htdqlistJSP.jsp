@@ -1,6 +1,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.house.domain.Tfrecord" %>
-<%@ page import="com.house.domain.User" %>
+<%@ page import="com.house.domain.Roster" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
     String path = request.getContextPath();
@@ -9,7 +9,7 @@
             + path + "/";
 %>
 <%
-    List<User> tfrecordList = (List<User>)request.getAttribute("list");
+    List<Roster> tfrecordList = (List<Roster>)request.getAttribute("list");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,8 +119,8 @@
                     <div class="ms-panel-header ms-panel-custom ">
 
                         <div class="ms-heading">
-                            <h6>用户信息</h6>
-                            <p>由管理员管理所有用户信息</p>
+                            <h6>合同待签列表</h6>
+                            <p>合同待签列表相关数据</p>
                         </div>
                     </div>
                     <div class="ms-panel-body">
@@ -129,22 +129,68 @@
                                 <thead>
                                 <tr>
                                     <th>序号</th>
-                                    <th>用户名（邮箱）</th>
-                                    <th>密码</th>
-                                    <th>姓名</th>
-                                    <th>权限组</th>
-
+                                    <th>小区名称</th>
+                                    <th>房号</th>
+                                    <th>面积</th>
+                                    <th>户型</th>
+                                    <th>住户姓名</th>
+                                    <th>身份证号</th>
+                                    <th>联系电话</th>
+                                    <th>入住时间</th>
+                                    <th>保障号</th>
+                                    <th>公租</th>
+                                    <th>廉租</th>
+                                    <th>合计</th>
+                                    <th>人均保障面积</th>
+                                    <th>房租</th>
+                                    <th>物业费</th>
+                                    <th>自愿退费时间</th>
+                                    <th>违规事由</th>
+                                    <th>发文时间</th>
+                                    <th>延期时间</th>
+                                    <th>腾空房屋时间</th>
+                                    <th>保障类型</th>
+                                    <th>家庭成员</th>
+                                    <th>住户性质</th>
+                                    <th>是否为已退</th>
+                                    <th>备注</th>
+                                    <th>是否清退</th>
+                                    <th>资格有效期</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <%	for(User d:tfrecordList){
+                                <%	for(Roster d:tfrecordList){
                                 %>
                                 <tr>
                                     <td><%=d.getNo()%></td>
-                                    <td><%=d.getUsername()%></td>
-                                    <td><%=d.getPassword()%></td>
+                                    <td><%=d.getZname()%></td>
+                                    <td><%=d.getRoomno()%></td>
+                                    <td><%=d.getMeasure()%></td>
+                                    <td><%=d.getLayout()%></td>
                                     <td><%=d.getName()%></td>
-                                    <td><%=d.getJury()%></td>
+                                    <td><%=d.getIdc()%></td>
+                                    <td><%=d.getPhnumber()%></td>
+                                    <td><%=d.getIntime()%></td>
+                                    <td><%=d.getGno()%></td>
+                                    <td><%=d.getPrent()%></td>
+                                    <td><%=d.getLrent()%></td>
+                                    <td><%=d.getSum()%></td>
+                                    <td><%=d.getAvemeasure()%></td>
+                                    <td><%=d.getRent()%></td>
+                                    <td><%=d.getPfee()%></td>
+                                    <td><%=d.getZytftime()%></td>
+                                    <td><%=d.getWgreason()%></td>
+                                    <td><%=d.getFwtime()%></td>
+                                    <td><%=d.getYqtime()%></td>
+                                    <td><%=d.getTktime()%></td>
+                                    <td><%=d.getBztype()%></td>
+                                    <td><%=d.getFamily()%></td>
+                                    <td><%=d.getZhtype()%></td>
+                                    <td><%=d.getIfback()%></td>
+                                    <td><%=d.getRemark()%></td>
+                                    <td><%=d.getIfqt()%></td>
+                                    <td><%=d.getYxtime()%></td>
+
                                 </tr>
                                 <%
                                     }

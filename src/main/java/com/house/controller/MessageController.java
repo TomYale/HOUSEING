@@ -56,6 +56,12 @@ public class MessageController {
         model.addAttribute("list",list);
         return "rosterJSP";
     }
+    @RequestMapping("/messsage/htdqlist")
+    public String htdqlistjsp(Model model){
+        List<Roster> list= findallService.findhtdq();
+        model.addAttribute("list",list);
+        return "htdqlistJSP";
+    }
     @RequestMapping("/messsage/user")
     public String userjsp(Model model){
         List<User> list= findallService.finduser();
