@@ -68,6 +68,8 @@ public class MessageController {
         model.addAttribute("list",list);
         return "userJSP";
     }
+
+
     @RequestMapping("/messsage/waiting")
     public String waitingjsp(Model model){
         List<Waiting> list= findallService.findwait();

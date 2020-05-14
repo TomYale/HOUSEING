@@ -91,7 +91,48 @@
         </div>
 
     </nav>
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModaladd">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">修改数据</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate="" action="messsage/adduser" method="post">
+                        <div class="form-group">
+                            <label for="ausername">用户名（邮箱）</label>
+                            <input type="email" class="form-control" id="ausername" name="ausername" placeholder="name@example.com" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="apassword">密码</label>
+                            <input type="password" class="form-control" id="apassword" name="apassword" placeholder="密码" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="aname">姓名</label>
+                            <input type="text" class="form-control" id="aname"  name="aname" placeholder="姓名" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="ajuri">权限</label>
+                            <select class="form-control" id="ajuri" name="ajuri">
+                                <option value="manager">manager</option>
+                                <option value="typist">typist</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-square btn-success">修改数据</button>
+                        <button type="button" class="btn btn-square btn-light" data-dismiss="modal">关闭</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     <br/>
             <div class="col-xl-12 col-md-12">
@@ -101,7 +142,7 @@
                         <div class="ms-heading">
                             <h6>用户信息</h6>
                             <p>由管理员管理所有用户信息</p>
-                            <p><button type="button" class="btn btn-square btn-success">添加数据</button> <button type="button" class="btn btn-square btn-info">导出数据</button></p>
+                            <p><button type="button" class="btn btn-square btn-success" data-toggle="modal" data-target="#myModaladd">添加数据</button> <button type="button" class="btn btn-square btn-info">导出数据</button></p>
 
                         </div>
                     </div>
@@ -147,31 +188,26 @@
                                                     <form>
                                                         <div class="form-group">
                                                             <label for="username">用户名（邮箱）</label>
-                                                            <input type="email" class="form-control" id="username" placeholder="name@example.com" value="<%=d.getUsername()%>">
+                                                            <input type="email" class="form-control" id="username" name="username" placeholder="name@example.com" value="<%=d.getUsername()%>" required="">
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="password">密码</label>
-                                                            <input type="password" class="form-control" id="password" placeholder="Password" value="<%=d.getPassword()%>">
+                                                            <input type="password" class="form-control" id="password" name="password" placeholder="密码" value="<%=d.getPassword()%>" required="">
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="name">姓名</label>
-                                                            <input type="text" class="form-control" id="name" placeholder="Password" value="<%=d.getName()%>">
+                                                            <input type="text" class="form-control" id="name" name="name" placeholder="姓名" value="<%=d.getName()%>" required="">
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="juri">权限</label>
-                                                            <select class="form-control" id="juri" value="<%=d.getJury()%>">
+                                                            <select class="form-control" id="juri" value="<%=d.getJury()%>" name="juri" required="">
                                                                 <option value="manager">manager</option>
                                                                 <option value="typist">typist</option>
                                                             </select>
                                                         </div>
-
+                                                        <button type="submit" class="btn btn-square btn-success">修改数据</button>
+                                                        <button type="button" class="btn btn-square btn-light" data-dismiss="modal">关闭</button>
                                                     </form>
-                                                </div>
-
-                                                <!-- 模态框底部 -->
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-square btn-success">修改数据</button>
-                                                    <button type="button" class="btn btn-square btn-light" data-dismiss="modal">关闭</button>
                                                 </div>
 
                                             </div>

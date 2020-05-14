@@ -20,13 +20,6 @@ public class User {
                 '}';
     }
 
-    public User(int no, String username, String password, String name, String jury) {
-        this.no = no;
-        this.username = username;
-        this.password = password;
-        this.name = name;
-        this.jury = jury;
-    }
 
     public void setNo(int no) {
         this.no = no;

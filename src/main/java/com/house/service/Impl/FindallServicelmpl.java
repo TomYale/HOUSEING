@@ -85,6 +85,13 @@ public class FindallServicelmpl implements FindallService {
     }
 
     @Override
+    public void insertuser(User user) throws IOException {
+        userDao.Insert(user);
+        // 提交事务
+        session.commit();
+    }
+
+    @Override
     public List<Waiting> findwait() {
         List<Waiting> list=waitingDao.findAll();
         return list;
