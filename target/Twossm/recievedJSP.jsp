@@ -14,27 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="<%=basePath%>">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>钦州住房保障中心管理系统</title>
-    <!-- Iconic Fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendors/iconic-fonts/flat-icons/flaticon.css">
-    <link rel="stylesheet" href="vendors/iconic-fonts/cryptocoins/cryptocoins.css">
-    <link rel="stylesheet" href="vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
-    <!-- Bootstrap core CSS -->
-    <link href="http://cdn.bootstrapmb.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery UI -->
-    <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
-    <!-- Page Specific CSS (Slick Slider.css) -->
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <!-- Greendash styles -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <%@ include file="head.jsp"%>
 
 </head>
 <body class="ms-body ms-aside-left-open ms-primary-theme">
@@ -76,7 +56,7 @@
         </div>
 
         <div class="logo-sn logo-sm ms-d-block-sm">
-            <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index.jsp"><img src="assets/img/dashboard/greendash-logo_1-84x41.png" alt="logo"> </a>
+            <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index.jsp"><img src="assets/img/dashboard/greendash-logo_2-84x41.png" alt="logo"> </a>
         </div>
 
         <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
@@ -128,6 +108,7 @@
                             <table class="table table-hover thead-primary" style="text-overflow: ellipsis;white-space: nowrap;overflow: hidden;">
                                 <thead>
                                 <tr>
+                                    <th>操作</th>
                                     <th>序号</th>
                                     <th>来文</th>
                                     <th>来文时间</th>
@@ -148,6 +129,8 @@
                                 <%	for(Recieved d:tfrecordList){
                                 %>
                                 <tr>
+                                    <td> <i class="fa fa-edit" data-toggle="modal" data-target="#myModal" οnclick="update(this)"></i><i class="fa fa-trash"></i>
+                                    </td>
                                     <td><%=d.getNo()%></td>
                                     <td><%=d.getWno()%></td>
                                     <td><%=d.getRetime()%></td>

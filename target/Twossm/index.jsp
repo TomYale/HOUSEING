@@ -64,7 +64,7 @@
         </div>
 
         <div class="logo-sn logo-sm ms-d-block-sm">
-            <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index.jsp"><img src="assets/img/dashboard/greendash-logo_1-84x41.png" alt="logo"> </a>
+            <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index.jsp"><img src="assets/img/dashboard/greendash-logo_2-84x41.png" alt="logo"> </a>
         </div>
 
         <label class="d-block mt-3"><a  class="btn-link" data-toggle="modal" data-target="#modal-12">你好，唐一鸥</a></label>

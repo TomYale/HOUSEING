@@ -7,22 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c331c58a-8b85-4655-a153-83a576e8b67f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/HtdqlistDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/htdqlistJSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/domain/Waiting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/domain/Waiting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/service/FindallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/service/FindallService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/service/Impl/FindallServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/service/Impl/FindallServicelmpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/aside.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aside.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/htdqlistJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/htdqlistJSP.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/htrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/htrecordJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lotteryJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lotteryJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/messageJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/messageJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/qtrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/qtrecordJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/recievedJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/recievedJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/rosterJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/rosterJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tfrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tfrecordJSP.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userJSP.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/waitingJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/waitingJSP.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/wxrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/wxrecordJSP.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/waiting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/WEB-INF/classes/com/house/domain/waiting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/htdqlistJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/htdqlistJSP.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Twossm/htrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/htrecordJSP.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/domain/waiting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/domain/waiting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/lotteryJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/lotteryJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/messageJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/messageJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/qtrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/qtrecordJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/recievedJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/recievedJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/rosterJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/rosterJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/tfrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/tfrecordJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/userJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/userJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/waitingJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/waitingJSP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Twossm/wxrecordJSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Twossm/wxrecordJSP.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -606,7 +616,7 @@
       <workItem from="1589200793060" duration="5212000" />
       <workItem from="1589267311988" duration="9773000" />
       <workItem from="1589337451039" duration="22169000" />
-      <workItem from="1589416282178" duration="6325000" />
+      <workItem from="1589416282178" duration="13757000" />
     </task>
     <servers />
   </component>
